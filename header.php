@@ -7,7 +7,7 @@
                             </div>
                             <div class="col-xs-8 text-right menu-1">
                                     <ul>
-                                            <li><a href="destination.php">Destination</a></li>
+                                            <li><a href="Homepage.php">Home Page</a></li>
 						
                                             <li><a href="pricing.php">Pricing</a></li>
                     <li><a href="carrental.php">Self-Car-rental</a></li>

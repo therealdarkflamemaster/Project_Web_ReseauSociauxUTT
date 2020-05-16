@@ -43,36 +43,37 @@
 									<div class="tab-content">
 										<div class="tab-content-inner active" data-content="signup">
 											<h3>Log in</h3>
-											<form action="#">
+											<form method="post" action="verif.php" >
 												<div class="row form-group">
 													<div class="col-md-12">
-														<label for="fullname">Username</label>
-														<input type="text" id="fullname" class="form-control">
+														<label for="email">Email UTT</label>
+														<input type="email" name="email" id="email" class="form-control">
 													</div>
 												</div>
 												
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="pwd">Password</label>
-														<input type="password" id="pwd" class="form-control">
+														<input type="password" name="pwd" id="pwd" class="form-control">
 													</div>
 												</div>
 												
 												<div class="row form-group">
 													<div class="col-md-12">
-														<input type="submit" class="btn btn-primary btn-block" value="Log in">
+														    <input type="submit" class="btn btn-primary btn-block" value="Log in">
 													</div>
 												</div>
 	                                                                                            
-	                                            <div class="row form-group">
-													<div class="col-md-12">
-	                                                    <label for="zhuce"> Vous êtes nouveau ? </label>
-	                                                    <a href="./register.php">
-	                                                    	<input type="button" class="btn btn-primary btn-block" value="S'inscrirez maintenant!">
-	                                                    </a>
-													</div>
-												</div>
-											</form>	
+
+											</form>
+                                            <div class="row form-group">
+                                                <div class="col-md-12">
+                                                    <label for="zhuce"> Vous êtes nouveau ? </label>
+                                                    <a href="./register.php">
+                                                        <input type="button" class="btn btn-primary btn-block" value="S'inscrirez maintenant!">
+                                                    </a>
+                                                </div>
+                                            </div>
 										</div>										
 									</div>
 								</div>

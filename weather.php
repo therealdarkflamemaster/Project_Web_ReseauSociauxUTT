@@ -17,7 +17,7 @@
         // console.log(temperature);
         var  img_src = "./images/"+num_icon+".png";
         var image = new String("<img src='"+img_src+"'>")
-        var tem = new String("Température de Troyes est "+temperature+" ℃ aujourd'hui.");
+        var tem = new String("Température de Troyes est "+temperature.toFixed(2)+" ℃ aujourd'hui.");
         var tem_pp = document.getElementById("tem");
         tem_pp.innerHTML =tem;
         var img = document.getElementById("img");
