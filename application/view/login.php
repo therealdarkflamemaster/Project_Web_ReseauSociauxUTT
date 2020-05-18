@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 	<?php
-		require('requireCSS.php');
+		require('framework/core/requireCSS.php');
 	?>
 
 	</head>
@@ -25,10 +25,10 @@
 
 	
 	<?php 
-		require('./header.php');
+		require('framework/core/header.php');
 	?>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images/utt1.png)">
+	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(/public/images/utt1.png)">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
@@ -87,13 +87,13 @@
 	
 
 	<?php 
-		require('./footer.php');
+		require('framework/core/footer.php');
 	?>
 
 	</div>
 
 	<?php 
-		require('requireJs.php');
+		require('framework/core/requireJs.php');
 	?>
 
 	</body>

@@ -11,12 +11,12 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">	
 		<?php
-			require('requireCSS.php');
+			require('framework/core/requireCSS.php');
 		?>
     </head>
     <body>
         <?php 
-        	require('./header.php');
+        	require('framework/core/header.php');
         ?>
          <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" >
         	<div class="gtco-container">
@@ -35,10 +35,10 @@ and open the template in the editor.
 			</div>
 		</header>
         <?php 
-        	require('./footer.php');
+        	require('framework/core/footer.php');
         ?>
         <?php 
-			require('requireJs.php');
+			require('framework/core/requireJs.php');
 		?>
     </body>
 </html>

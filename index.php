@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 	<?php
-                require('requireCSS.php');
+                require('./framework/core/requireCSS.php');
                 
 	?>
 	
@@ -24,10 +24,10 @@
 	
 	<div id="page">
 	<?php 
-		require('./header.php');
+		require('./framework/core/header.php');
 	?>
 	
-                    <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images//image_pre1.jpg)">
+                    <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(public/images/image_pre1.jpg)">
                         <div class="overlay"></div>
                         <div class="gtco-container">
                                 <div class="row">
@@ -39,7 +39,7 @@
                                                         <div id='tem' style="color:white"></div>
                                                         <br>
                                                         <h1>Réseaux Sociaux de Université de Technologie de Troyes</h1>	
-                                                        <?php include 'weather.php'; ?>
+                                                        <?php include 'application/model/weather.php'; ?>
                                                 </div>				
                                         </div>
 
@@ -95,7 +95,7 @@
         
         
 
-                    <div class="gtco-cover gtco-cover-sm" style="background-image: url(images/utt2.jpg)"  data-stellar-background-ratio="0.5">
+                    <div class="gtco-cover gtco-cover-sm" style="background-image: url(public/images/utt2.jpg)"  data-stellar-background-ratio="0.5">
                             <div class="overlay"></div>
                             <div class="gtco-container text-center">
                                     <div class="display-t">
@@ -144,13 +144,13 @@
 
 
 	<?php 
-		require('./footer.php');
+		require('./framework/core/footer.php');
 	?>
 
 	</div>
 
 	<?php 
-		require('requireJs.php');
+		require('./framework/core/requireJs.php');
 	?>
 
 	</body>

@@ -10,7 +10,7 @@ $PHP_AUTH_PW = $_POST['pwd'];
 
     if($PHP_AUTH_EMAIL=="" || $PHP_AUTH_PW==""){
         echo '<script type="text/javascript">alert("Faux email ou mot de pass");';
-        exit("location.href='login.php';</script>");
+        exit("location.href='application/view/login.php';</script>");
     }else{
         echo $PHP_AUTH_EMAIL;
         echo $PHP_AUTH_PW;
@@ -25,13 +25,13 @@ $PHP_AUTH_PW = $_POST['pwd'];
 
         if( empty($row[0]) ){
             echo '<script type="text/javascript">alert(" No existing email  ");';
-            exit("location.href='login.php';</script>");
+            exit("location.href='application/view/login.php';</script>");
         }else if( empty($row2[0]) ){
             echo '<script type="text/javascript">alert(" Faux mot de pass  ");';
-            exit("location.href='login.php';</script>");
+            exit("location.href='application/view/login.php';</script>");
         }else{
             echo '<script type="text/javascript">alert(" Welcome");';
-            exit("location.href='Homepage.php';</script>");
+            exit("location.href='application/view/Homepage.php';</script>");
         }
 
 

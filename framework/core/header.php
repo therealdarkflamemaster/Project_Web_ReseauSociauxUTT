@@ -7,19 +7,19 @@
                             </div>
                             <div class="col-xs-8 text-right menu-1">
                                     <ul>
-                                            <li><a href="Homepage.php">Home Page</a></li>
+                                            <li><a href="application/view/Homepage.php">Home Page</a></li>
 						
-                                            <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="carrental.php">Self-Car-rental</a></li>
-                    <li><a href="rentcar.php">Rent-a-car</a></li>
+                                            <li><a href="application/view/pricing.php">Pricing</a></li>
+                    <li><a href="application/view/carrental.php">Self-Car-rental</a></li>
+                    <li><a href="application/view/rentcar.php">Rent-a-car</a></li>
                                             <li class="has-dropdown">
-                                                    <a href="login.php">Log in</a>
+                                                    <a href="application/view/login.php">Log in</a>
                                                     <ul class="dropdown">
-                                                            <li><a href="login.php">Log in</a></li>
+                                                            <li><a href="application/view/login.php">Log in</a></li>
                             <li><a href="#">Log out</a></li>
                                                     </ul>
                                             </li>
-                    <li><a href="register.php"> S'inscrire </a></li>
+                    <li><a href="application/view/register.php"> S'inscrire </a></li>
                                     </ul>	
                             </div>
                     </div>

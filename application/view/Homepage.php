@@ -11,9 +11,10 @@
     <meta name="author" content="." />
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="/public/css/dashboard.css">
     <?php
-    require('requireCSS.php');
+
+    require '\framework\core/requireCSS.php';
 
     ?>
 
@@ -26,7 +27,7 @@
 <div id="page">
 
     <?php
-    require('header_login.php')
+    require('framework/core/header_login.php')
     ?>
 
     <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="height:75px">
@@ -245,13 +246,13 @@
 
 
     <?php
-    require('./footer.php');
+    require('framework/core/footer.php');
     ?>
 </div>
 <?php
-require('requireJs.php');
+require('framework/core/requireJs.php');
 ?>
-<script src="js/dashboard.js"></script>
+<script src="/public/js/dashboard.js"></script>
 </body>
 </html>
 

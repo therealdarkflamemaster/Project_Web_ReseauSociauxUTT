@@ -15,7 +15,7 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 		<?php
-			require('requireCSS.php');
+			require('framework/core/requireCSS.php');
 		?>
     </head>
     <body>
@@ -23,7 +23,7 @@ and open the template in the editor.
 	
 		<div id="page">
        	<?php 
-        	require('./header.php');
+        	require('framework/core/header.php');
         ?>
         <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" >
         	<div class="gtco-container">
@@ -42,10 +42,10 @@ and open the template in the editor.
 			</div>
 		</header>
         <?php 
-        	require('./footer.php');
+        	require('framework/core/footer.php');
         ?>
         <?php 
-			require('requireJs.php');
+			require('framework/core/requireJs.php');
 		?>
     </body>
 </html>
