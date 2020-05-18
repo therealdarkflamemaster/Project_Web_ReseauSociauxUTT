@@ -7,9 +7,9 @@
             </div>
             <div class="col-xs-8 text-right menu-1">
                 <ul>
-                    <li><a href="application/view/Homepage.php">Home Page</a></li>
+                    <li><a href="./Homepage.php">Home Page</a></li>
 
-                    <li><a href="application/view/register.php"> Log out </a></li>
+                    <li><a href="./register.php"> Log out </a></li>
                 </ul>
             </div>
         </div>

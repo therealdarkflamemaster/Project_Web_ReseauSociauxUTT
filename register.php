@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 	<?php
-		require('framework/core/requireCSS.php');
+		require('./requireCSS.php');
 	?>
 
 	</head>
@@ -25,10 +25,10 @@
 
 	
 	<?php 
-		require('framework/core/header.php');
+		require('./header.php');
 	?>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(/public/images/utt3.jpg)">
+	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(public/images/utt3.jpg)">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
@@ -55,7 +55,7 @@
 			<div class="row">
 				<div class="col-md-12">
                     <!-- FORM -->
-                    <form method="post" action="application/controllers/register_post_action.php">
+                    <form method="post" action="./register_post_action.php">
                         <div class="col-md-6 animate-box">
                             <h3>Vos  Informations</h3>
 
@@ -218,7 +218,7 @@
 	</div>
 
 	<?php 
-		require('framework/core/requireJs.php');
+		require('./requireJs.php');
 	?>
 
 	</body>

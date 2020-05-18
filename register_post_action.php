@@ -23,11 +23,11 @@ if(isset($_POST['submit'])){
     }catch(PDOException $e){
         $database->rollBack();
         echo '<script type="text/javascript">alert(" Cet email est déjà enregisté  ");';
-        exit("location.href='application/view/login.php';</script>");
+        exit("location.href='./login.php';</script>");
 
     }
     echo '<script type="text/javascript">alert(" Réussir à enregister!  ");';
-    exit("location.href='application/view/Homepage.php';</script>");
+    exit("location.href='./Homepage.php';</script>");
 
 }
 

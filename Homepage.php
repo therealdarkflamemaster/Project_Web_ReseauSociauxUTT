@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/public/css/dashboard.css">
     <?php
 
-    require '\framework\core/requireCSS.php';
+    require './requireCSS.php';
 
     ?>
 
@@ -27,7 +27,7 @@
 <div id="page">
 
     <?php
-    require('framework/core/header_login.php')
+    require('./header_login.php')
     ?>
 
     <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="height:75px">
@@ -246,11 +246,11 @@
 
 
     <?php
-    require('framework/core/footer.php');
+    require('./footer.php');
     ?>
 </div>
 <?php
-require('framework/core/requireJs.php');
+require('./requireJs.php');
 ?>
 <script src="/public/js/dashboard.js"></script>
 </body>

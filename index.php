@@ -13,8 +13,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 	<?php
-                require('./framework/core/requireCSS.php');
-                
+                require('./requireCSS.php');
+
 	?>
 	
 	</head>
@@ -24,7 +24,7 @@
 	
 	<div id="page">
 	<?php 
-		require('./framework/core/header.php');
+		require('./header.php');
 	?>
 	
                     <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(public/images/image_pre1.jpg)">
@@ -39,7 +39,7 @@
                                                         <div id='tem' style="color:white"></div>
                                                         <br>
                                                         <h1>Réseaux Sociaux de Université de Technologie de Troyes</h1>	
-                                                        <?php include 'application/model/weather.php'; ?>
+                                                        <?php include './weather.php'; ?>
                                                 </div>				
                                         </div>
 
@@ -144,13 +144,13 @@
 
 
 	<?php 
-		require('./framework/core/footer.php');
+		require('./footer.php');
 	?>
 
 	</div>
 
 	<?php 
-		require('./framework/core/requireJs.php');
+		require('./requireJs.php');
 	?>
 
 	</body>

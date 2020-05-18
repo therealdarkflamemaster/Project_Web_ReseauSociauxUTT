@@ -14,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 	<?php
-		require('framework/core/requireCSS.php');
+		require('./requireCSS.php');
 	?>
 
 	</head>
@@ -26,7 +26,7 @@
 
 	
 	<?php 
-		require('framework/core/header.php');
+		require('./header.php');
 	?>
 	
 	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(/public/images/utt2.jpg)">
@@ -107,13 +107,13 @@
 	</div>
 
 	<?php 
-		require('framework/core/footer.php');
+		require('./footer.php');
 	?>
 
 	</div>
 
 	<?php 
-		require('framework/core/requireJs.php');
+		require('./requireJs.php');
 	?>
 
 	</body>
