@@ -15,7 +15,7 @@
         var temperature = obj.main.temp-273.15; // the orginal return value is in the format of k
         // console.log(num_icon);
         // console.log(temperature);
-        var  img_src = "./public/images/"+num_icon+".png";
+        var  img_src = "../../public/images/"+num_icon+".png";
         var image = new String("<img src='"+img_src+"'>")
         var tem = new String("Température de Troyes est "+temperature.toFixed(2)+" ℃ aujourd'hui.");
         var tem_pp = document.getElementById("tem");
