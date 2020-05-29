@@ -13,7 +13,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 	<?php
-		require('./requireCSS.php');
+    include "../../controller/config.php";
+
+    require $root.'/app/view/fragment/requireCSS.php';
 	?>
 
 	</head>
@@ -24,11 +26,11 @@
 	<div id="page">
 
 	
-	<?php 
-		require('./header.php');
+	<?php
+        require $root.'/app/view/fragment/fragmentHeader.php';
 	?>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(public/images/utt3.jpg)">
+	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(../../../public/images/utt3.jpg)">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
@@ -217,8 +219,8 @@
 
 	</div>
 
-	<?php 
-		require('./requireJs.php');
+	<?php
+        require $root.'/app/view/fragment/requireJs.php';
 	?>
 
 	</body>

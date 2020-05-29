@@ -25,6 +25,9 @@ $arg = $param;
 // --- Liste des méthodes autorisées
 switch ($action) {
     case "accueil" :
+    case "homepage" :
+    case "login" :
+    case "register" :
 
 
         ControllerPages::$action($arg);
