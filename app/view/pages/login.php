@@ -30,7 +30,7 @@
     require $root.'/app/view/fragment/fragmentHeader.php';
 	?>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(../../../public/images/utt1.png)">
+	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url('http://localhost/ReseauSociauxUTT//public/images/utt1.png'">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">

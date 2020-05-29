@@ -30,7 +30,7 @@
         require $root.'/app/view/fragment/fragmentHeader.php';
 	?>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(../../../public/images/utt3.jpg)">
+	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url('http://localhost/ReseauSociauxUTT/public/images/utt3.jpg')">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
@@ -190,7 +190,7 @@
                         }
 
                         function openMap(){
-                            var url ="http://localhost/ReseauSociauxUTT/map.html";
+                            var url ="http://localhost/ReseauSociauxUTT/app/module/map.html";
                             openwindow(url,"Open in Google Map",1000,500);
                         }
 
