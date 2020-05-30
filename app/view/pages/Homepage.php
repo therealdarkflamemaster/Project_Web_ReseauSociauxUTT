@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
     <?php
-        include "../../controller/config.php";
+        include_once "../../controller/config.php";
 
         require $root.'/app/view/fragment/requireCSS.php';
 

@@ -57,12 +57,14 @@
 			<div class="row">
 				<div class="col-md-12">
                     <!-- FORM -->
-                    <form method="post" action="./register_post_action.php">
+                    <form role="form" method="post" action="../../app/module/register_post_action.php">
+
                         <div class="col-md-6 animate-box">
                             <h3>Vos  Informations</h3>
 
 
                             <div class="row form-group">
+
                                 <div class="col-md-12">
                                     <label  for="name">UserName</label>
                                     <input type="text" id="user" name="user"  class="form-control" >
@@ -152,6 +154,7 @@
 
 						
 						<div class="form-group">
+
 							<input type="submit" id="sumbit" name="submit" value="Submit" class="btn btn-primary" disabled>
 						</div>
 

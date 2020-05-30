@@ -10,11 +10,13 @@ if(isset($_POST['submit'])){
         $identity = "etudiant(e)";
     }else if ($option_identity == "prof"){
         $identity ="Professeur";
-    }else{
-        $identity ="Personel";
+    }else {
+        $identity = "Personel";
     }
-    include 'fragmentDataBaseConfig.php';
+
     try{
+        require_once 'Model.php';
+        $database = Model::getInstance();
         $database->beginTransaction();
         $requete = "insert into utilisateur values ('$username', '$email', '$password', '$identity', '$localisation')";
         $statement = $database->prepare($requete);
@@ -23,11 +25,11 @@ if(isset($_POST['submit'])){
     }catch(PDOException $e){
         $database->rollBack();
         echo '<script type="text/javascript">alert(" Cet email est déjà enregisté  ");';
-        exit("location.href='./login.php';</script>");
+        exit("location.href='http://localhost/ReseauSociauxUTT/app/router/router.php?action=login';</script>");
 
     }
     echo '<script type="text/javascript">alert(" Réussir à enregister!  ");';
-    exit("location.href='./Homepage.php';</script>");
+    exit("location.href='http://localhost/ReseauSociauxUTT/app/router/router.php?action=homepage';</script>");
 
 }
 

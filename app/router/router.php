@@ -28,10 +28,10 @@ switch ($action) {
     case "homepage" :
     case "login" :
     case "register" :
-
-
         ControllerPages::$action($arg);
         break;
+
+
 
 
 

@@ -30,7 +30,7 @@
     require $root.'/app/view/fragment/fragmentHeader.php';
 	?>
 	
-	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url('http://localhost/ReseauSociauxUTT//public/images/utt1.png'">
+	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url('http://localhost/ReseauSociauxUTT/public/images/utt1.png'">
 		<div class="overlay"></div>
 		<div class="gtco-container">
 			<div class="row">
@@ -45,8 +45,9 @@
 									<div class="tab-content">
 										<div class="tab-content-inner active" data-content="signup">
 											<h3>Log in</h3>
-											<form method="post" action="verif.php" >
+											<form method="post" action="../../app/module/verif.php" >
 												<div class="row form-group">
+
 													<div class="col-md-12">
 														<label for="email">Email UTT</label>
 														<input type="email" name="email" id="email" class="form-control">
@@ -71,7 +72,7 @@
                                             <div class="row form-group">
                                                 <div class="col-md-12">
                                                     <label for="zhuce"> Vous êtes nouveau ? </label>
-                                                    <a href="./register.php">
+                                                    <a href="http://localhost/ReseauSociauxUTT/app/router/router.php?action=register">
                                                         <input type="button" class="btn btn-primary btn-block" value="S'inscrirez maintenant!">
                                                     </a>
                                                 </div>
