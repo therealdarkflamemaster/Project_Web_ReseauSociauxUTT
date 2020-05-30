@@ -5,3 +5,10 @@ Utlisant le php, javascript, html, css(bootstrap, animate ...), ...
 API of GoogleMap, OpenWeather ...
 
 MVC structure with config.php and router.php
+
+
+Introduction avec des images :
+![image](https://github.com/therealdarkflamemaster/Project_Web_ReseauSociauxUTT/public/images/mainpage.png)
+![image](https://github.com/therealdarkflamemaster/Project_Web_ReseauSociauxUTT/public/images/Login.png)
+![image](https://github.com/therealdarkflamemaster/Project_Web_ReseauSociauxUTT/public/images/register.png)
+![image](https://github.com/therealdarkflamemaster/Project_Web_ReseauSociauxUTT/public/images/GoogleApi.png)
