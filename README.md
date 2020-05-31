@@ -6,6 +6,8 @@ API of GoogleMap, OpenWeather ...
 
 MVC structure with config.php and router.php
 
+Servie Design Patterns: Service Controller (app/controller/ServiceController.php)
+
 
 Introduction avec des images :
 ![image](https://github.com/therealdarkflamemaster/Project_Web_ReseauSociauxUTT/blob/master/public/images/mainpage.png)
