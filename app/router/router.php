@@ -2,7 +2,7 @@
 <!-- ----- debut Router-->
 <?php
 require ('../controller/ControllerPages.php');
-
+require ('../controller/ServiceController.php');
 error_reporting(E_ALL ^ E_NOTICE);
 
 error_reporting(E_ALL ^ E_WARNING);
@@ -31,10 +31,10 @@ switch ($action) {
         ControllerPages::$action($arg);
         break;
 
-
-
-
-
+    case "shareTwitter" :
+    case "googleMap" :
+        ServiceController::$action();
+        break;
 
     // Tache par défaut
     default:

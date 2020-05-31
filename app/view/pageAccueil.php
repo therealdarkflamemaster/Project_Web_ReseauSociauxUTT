@@ -40,8 +40,8 @@
                             <br>
                             <h1>Réseaux Sociaux de Université de Technologie de Troyes</h1>
                             <?php
-
-                                include "../module/weather.php";
+                                include_once '../controller/ServiceController.php';
+                                ServiceController::getweather();
                             ?>
                         </div>
                     </div>
@@ -158,27 +158,3 @@ require('fragment/requireJs.php');
 
 </body>
 </html>
-
-
-<!--
-Widgets constructor dans le site
-
-        <div id="openweathermap-widget-15"></div>
-<script>
-        window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
-        window.myWidgetParam.push({
-                id: 15,
-                cityid: '2971548',
-                appid: 'a18189e2a9f309ca13fee53dd431d2a9',
-                units: 'metric',containerid: 'openweathermap-widget-15',
-        });
-        (function() {
-                var script = document.createElement('script');
-                script.async = true;script.charset = "utf-8";
-                script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(script, s);  })();
-
-</script>
-
--->

@@ -1,5 +1,5 @@
 <?php
 
-header('Location: app/router/router.php?action=acceuil');
+header('Location: app/router/router.php?action=accueil');
 
 ?>

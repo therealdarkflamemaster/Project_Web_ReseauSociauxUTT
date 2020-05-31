@@ -114,7 +114,8 @@
 
                                 <div class="row form-group">
                                     <div class="col-md-12">
-                                        <a href="#" onClick="twitterShare()">Partage dans Twitter!</a>
+
+                                        <a href="router.php?action=shareTwitter">Partage dans Twitter!</a>
                                     </div>
 
                                 </div>
@@ -136,7 +137,7 @@
                                             <option value="G">G: Carrefour</option>
 
                                         </select>
-                                        <a href="#" class="btn btn-primary" onClick="openMap()">Ou choisir dans Google Map</a>
+                                        <a href="router.php?action=googleMap" class="btn btn-primary" >Ou choisir dans Google Map</a>
                                     </div>
                                 </div>
 
@@ -187,25 +188,9 @@
 							}
 						}
 
-                        function twitterShare(){
-                            var url = "https://twitter.com/share?text=J'ai une bonne expérience dans le UTT Réseux Sociaux. N'hésitez pas à connaître shengxiang.li@utt.fr";
-                            openwindow(url,"Twitter Share",500,350);
-                        }
 
-                        function openMap(){
-                            var url ="http://localhost/ReseauSociauxUTT/app/module/map.html";
-                            openwindow(url,"Open in Google Map",1000,500);
-                        }
 
-                        function openwindow(url,name,iWidth,iHeight){
-                            var url;
-                            var name;
-                            var iWidth;
-                            var iHeight;
-                            var iTop = (window.screen.availHeight-30-iHeight)/2 ;
-                            var iLeft = (window.screen.availWidth-10-iWidth)/2;
-                            window.open(url,name,'height='+iHeight+',,innerHeight='+iHeight+',width='+iWidth+',innerWidth='+iWidth+',top='+iTop+',left='+iLeft+',toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');
-                        }
+
 
 						
 					</script>
