@@ -1,10 +1,12 @@
 # Project_Web_ReseauSociauxUTT
 
-Utlisant le php, javascript, html, css(bootstrap, animate ...), ...
+* Utlisant le php, javascript, html, css(bootstrap, animate ...), ...
 
-API of GoogleMap, OpenWeather ...
+* API of GoogleMap, OpenWeather ...
 
-MVC structure with config.php and router.php
+* MVC structure with config.php and router.php
+
+* Servie Design Patterns: Service Controller (app/controller/ServiceController.php)
 
 
 Introduction avec des images :
