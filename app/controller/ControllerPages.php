@@ -43,6 +43,15 @@ class ControllerPages{
 
     }
 
+    public static function weatherHomePage(){
+        // --- page de feature Weather
+        include 'config.php';
+        $vue = $root . '/app/view/pages/weatherHomePage.php';
+        if (DEBUG)
+            echo ("ControllerPages : pageAccueil : vue = $vue");
+        require ($vue);
+    }
+
 
 
 

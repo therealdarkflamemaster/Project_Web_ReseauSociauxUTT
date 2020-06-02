@@ -74,16 +74,11 @@
                         </a>
                     </h6>
                     <ul class="nav flex-column mb-2">
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="router?action=weatherHomePage">
                                 <span data-feather="file-text"></span>
-                                Add cours
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span data-feather="file-text"></span>
-                                World Channel
+                                Le temps dans les differents formats
                             </a>
                         </li>
                         <li class="nav-item">
@@ -154,6 +149,8 @@
                             divElement.hidden = false;
                         }
                     }
+
+
                 </script>
             </main>
         </div>

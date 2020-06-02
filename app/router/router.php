@@ -28,6 +28,7 @@ switch ($action) {
     case "homepage" :
     case "login" :
     case "register" :
+    case "weatherHomePage":
         ControllerPages::$action($arg);
         break;
 
