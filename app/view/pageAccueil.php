@@ -32,21 +32,19 @@
         <div class="gtco-container">
             <div class="row">
                 <div class="col-md-12 col-md-offset-0 text-left">
-
+                    <br />
+                    <br />
+                    <div id='img'></div>
+                    <div id='tem' style="color:#ffffff"></div>
+                    <?php
+                    include_once '../controller/ServiceController.php';
+                    ServiceController::openweather('JSON');
+                    ?>
                     <div class="row row-mt-15em">
                         <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-                            <div id='img'></div>
-                            <div id='tem' style="color:#ffffff"></div>
-                            <br>
-                            <h1>Réseaux Sociaux de Université de Technologie de Troyes</h1>
-                            <?php
-                                include_once '../controller/ServiceController.php';
-                                ServiceController::getweather();
-                            ?>
+                            <h1>Réseaux Sociaux UTT</h1>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

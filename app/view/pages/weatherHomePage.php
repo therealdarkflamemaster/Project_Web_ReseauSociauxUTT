@@ -43,15 +43,21 @@
                     <ul class="nav flex-column">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" onclick="generate('json')">
                                 <span data-feather="file"></span>
                                 En JSON
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" onclick="generate('xml')">
                                 <span data-feather="shopping-cart"></span>
                                 En XML
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generate('html')">
+                                <span data-feather="shopping-cart"></span>
+                                En HTML
                             </a>
                         </li>
                     </ul>
@@ -76,12 +82,12 @@
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-
-
-
+                <div id='img'></div>
+                <div id='tem' style="color:#ffffff"></div>
             </main>
         </div>
     </div>
+
 
 
     <?php

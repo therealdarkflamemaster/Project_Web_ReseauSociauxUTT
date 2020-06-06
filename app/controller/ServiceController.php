@@ -3,10 +3,6 @@
 
 class ServiceController{
 
-    public static function getweather(){
-        include_once '../module/weather.php';
-    }
-
     public static function shareTwitter(){
         include_once '../module/shareTwitter.php';
         exit("<script>location.href='http://localhost/ReseauSociauxUTT/app/router/router.php?action=register'</script>");
@@ -24,9 +20,16 @@ class ServiceController{
 
     }
 
-    public static function openweather($format){
-        include_once '../module/XMLopenWeather.php';
-
+    public static function openweather($format){ // Service Design Pattern 'Media Type Negotiation'
+        if($format == 'JSON'){
+            include_once '../module/weather.php';
+        }else if ($format == 'XML'){
+            include_once '../module/XMLopenWeather.php';
+        }else if ($format == 'HTML'){
+            include_once '../module/HTMLopenWeather.php';
+        }else {
+            echo ("Wrong type of $format");
+        }
     }
 
 
