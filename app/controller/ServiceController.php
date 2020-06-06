@@ -24,6 +24,11 @@ class ServiceController{
 
     }
 
+    public static function openweather($format){
+        include_once '../module/XMLopenWeather.php';
+
+    }
+
 
 
 
