@@ -4,13 +4,16 @@
 class OpenWeatherAPI
 {
     public static function generateRequest($format){
-        $format ='xml';
-        if($format == 'json'){
+        if($format == 'JSON'){
             include_once 'weather.php';
-        }else if ($format == 'xml'){
+        }else if ($format == 'XML'){
             include_once 'XMLopenWeather.php';
-        }else { // $format == 'html'
+        }else if ($format == 'HTML'){
             include_once 'HTMLopenWeather.php';
+        }else if ($format == 'Semaine'){
+            include_once 'SemaineopenWeather.php';
+        }else {
+            echo ("Wrong type of $format");
         }
     }
 

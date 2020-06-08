@@ -34,8 +34,8 @@
                 <div class="col-md-12 col-md-offset-0 text-left">
                     <br />
                     <br />
-                    <div id='img'></div>
-                    <div id='tem' style="color:#ffffff"></div>
+                    <div id='imgjson'></div>
+                    <div id='temjson' style="color:#ffffff"></div>
                     <?php
                     include_once '../controller/ServiceController.php';
                     ServiceController::openweather('JSON');

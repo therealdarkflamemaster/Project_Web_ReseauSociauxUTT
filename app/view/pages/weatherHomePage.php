@@ -18,7 +18,7 @@
     require $root.'/app/view/fragment/requireCSS.php';
 
     ?>
-    <link rel="stylesheet" href="<?php echo $root.'/public/css/dashboard.css'; ?>">
+
 
 </head>
 <body>
@@ -43,19 +43,19 @@
                     <ul class="nav flex-column">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="generate('json')">
+                            <a class="nav-link disabled" href="#" >
                                 <span data-feather="file"></span>
                                 En JSON
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="generate('xml')">
+                            <a class="nav-link disabled" href="#" >
                                 <span data-feather="shopping-cart"></span>
                                 En XML
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="generate('html')">
+                            <a class="nav-link disabled" href="#">
                                 <span data-feather="shopping-cart"></span>
                                 En HTML
                             </a>
@@ -66,13 +66,13 @@
                     <ul class="nav flex-column mb-2">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="">
+                            <a class="nav-link disabled" href="#">
                                 <span data-feather="file-text"></span>
                                 Le temps dans la semaine
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >
+                            <a class="nav-link disabled" href="#" >
                                 <span data-feather="file-text"></span>
                                 Le temps dès maintennant
                             </a>
@@ -82,8 +82,44 @@
             </nav>
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                <div id='img'></div>
-                <div id='tem' style="color:#ffffff"></div>
+
+                <h1 class="h3">Le temps dès maintennant en 3 formats</h1>
+                <div class="col-md-3">
+
+                    <?php
+                    include_once '../../controller/ServiceController.php';
+                    ServiceController::openweather('XML');
+                    ?>
+                    <br />
+                    <div style="color: #0adec0;"><b>En XML</b></div>
+                </div>
+                <div class="col-md-3">
+                    <div id='imgjson'></div>
+                    <div id='temjson' style="color:black"></div>
+                    <?php
+                    include_once '../../controller/ServiceController.php';
+                    ServiceController::openweather('JSON');
+                    ?>
+                    <br />
+                    <div style="color: #0adec0;"><b>En JSON</b></div>
+                </div>
+                <div class="col-md-3">
+                    <?php
+                    include_once '../../controller/ServiceController.php';
+                    ServiceController::openweather('HTML');
+                    ?>
+                    <br />
+                    <div  style="color: #0adec0;"><b>En HTML</b></div>
+                </div>
+                <div class="col-md-9">
+                    <h1 class="h3">Le temps dans la semaine</h1>
+                    <br />
+                    <?php
+                    include_once '../../controller/ServiceController.php';
+                    ServiceController::openweather('Semaine');
+                    ?>
+                    <div  style="color: #0adec0;"><b>En Widget</b></div>
+                </div>
             </main>
         </div>
     </div>
@@ -97,7 +133,7 @@
 <?php
 require $root.'/app/view/fragment/requireJs.php';
 ?>
-<script src="<?php $root.'/public/js/dashboard.js'?>"></script>
+
 </body>
 </html>
 

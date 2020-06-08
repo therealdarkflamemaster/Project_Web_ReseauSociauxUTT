@@ -20,9 +20,9 @@
             var img_src = "../../public/images/" + num_icon + ".png";
             var image = new String("<img src='" + img_src + "'>")
             var tem = new String("Température de Troyes est " + temperature.toFixed(2) + " ℃ aujourd'hui.");
-            var tem_pp = document.getElementById("tem");
+            var tem_pp = document.getElementById("temjson");
             tem_pp.innerHTML = tem;
-            var img = document.getElementById("img");
+            var img = document.getElementById("imgjson");
             img.innerHTML = image;
         }
 
