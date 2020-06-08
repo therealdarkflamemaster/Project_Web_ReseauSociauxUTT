@@ -6,7 +6,9 @@
 
 * MVC structure with config.php and router.php
 
-* Servie Design Patterns: Service Controller (app/controller/ServiceController.php)
+* Servie Design Patterns: 
+> * Service Controller (app/controller/ServiceController.php)
+> * Media Type Negotiation (app/module/openWeatherAPI.php & app/controller/ServiceController.php)
 
 
 Introduction avec des images :
