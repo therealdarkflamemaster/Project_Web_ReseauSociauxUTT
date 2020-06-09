@@ -13,7 +13,7 @@ class ServiceController{
         exit("<script>location.href='http://localhost/ReseauSociauxUTT/app/router/router.php?action=register'</script>");
 
     }
-
+    // Service Design Pattern --> Single Message Argument
     public static function generateQRcode($link,$nom){
         echo ("<p><img src='https://api.qrserver.com/v1/create-qr-code/?data=$link&size=150x150' alt='' title='go to $nom' /></p>");
         echo (" <p><a href='$link'>Link</a></p>");
